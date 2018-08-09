@@ -7,6 +7,13 @@
 <body>
 	<div ng-app="">
 		 <p> sum of 5+5 : {{5+5}}</p>
+		 <p> sum of 6+5 : </p>
+		 <p ng-bind="6+5"> </p>
+		 <div ng-init="name='Sakshay';color='lightblue'">
+			<p>{{name}}</p>
+			<input style="background-color:{{color}}" ng-model="input">
+			<p ng-bind="input"></p>
+		</div>
 	</div>
 </body>
 </html>
