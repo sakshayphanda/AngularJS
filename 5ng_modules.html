@@ -1,0 +1,18 @@
+<html>
+    <title>AngularJS Modules</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <body>
+        <div ng-app="myApp" ng-controller="myCtrl">
+           <p>the name is : {{firstName + " " + lastName}} </p>
+        </div>
+        <script>
+            var app = angular.module("myApp",[]);
+            app.controller("myCtrl",function($scope)
+        {
+            $scope.firstName = 'Sakshay';
+            $scope.lastName ='Phanda';
+        });
+        </script>
+    </body>
+</html>
